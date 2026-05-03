@@ -1,8 +1,7 @@
-import { configureStore } from '@reduxjs/toolkit';
-import cartReducer from './CartSlice';
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
 
-export const store = configureStore({
-  reducer: {
-    cart: cartReducer
-  }
+export default defineConfig({
+  plugins: [react()],
+  base: '/Paradise-Nursery-Shopping-App/'
 });
